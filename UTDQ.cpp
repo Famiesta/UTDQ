@@ -55,13 +55,7 @@ void input(int a[MAX][5], int b[MAX][5], int &m){
 		b[i][3] = a[i][3];
 	} 
 }
-void outputLayoutText(int a[MAX][5], int &m){
-	cout << "CHIEN LUOC UU TIEN DOC QUYEN" << endl;
-	for(int i = 0; i < m; i++){
-		cout << "P" << a[i][0] << "(" << a[i][1] << "," << a[i][2] << "," << a[i][3] << ")" << endl;
-	}
-}
-void outputLayoutTable(int a[MAX][5], int m){
+void output(int a[MAX][5], int m){
 	cout << endl << "--------------------CHIEN LUOC UU TIEN DOC QUYEN-------------------" << endl;
 	cout << endl << right << setw(15) << "  Tien trinh  |";
 	cout << right << setw(18) << "  Thoi diem vao  |";
@@ -189,7 +183,7 @@ void TGC(int c[MAX][5], int &m){
 void UTDQ(int a[MAX][5], int b[MAX][5], int &m){
 	input(a,b,m);//Nhap vao thong tin lan luot cac tien trinh
 	system("cls");//xoa man hinh
-	outputLayoutTable(a,m);//Xuat ra man hinh theo dang bang
+	output(a,m);//Xuat ra man hinh theo dang bang
 	sort(b,m);//sap xep lai theo thu tu uu tien cua tien trinh
 	DPHD(b,a,m);
 	TGLLHT(a,m);
