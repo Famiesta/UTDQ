@@ -190,3 +190,4 @@ void UTDQ(int a[MAX][5], int b[MAX][5], int &m){
 	TGC(a,m);
 	system("pause");//tam dung man hinh de xem truoc khi thoat
 }
+//Source code https://github.com/Famiesta/UTDQ
